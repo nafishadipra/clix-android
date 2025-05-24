@@ -14,8 +14,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="clix" />
-                            <entry key="sourceFile" value="$PROJECT_DIR$/external/CLIX.svg" />
+                            <entry key="outputName" value="water_fee_svgrepo_com" />
+                            <entry key="sourceFile" value="$PROJECT_DIR$/external/water-fee-svgrepo-com.svg" />
                           </map>
                         </option>
                       </PersistentState>

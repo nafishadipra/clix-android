@@ -2,16 +2,16 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Clixandroidproject" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Primary brand color -->
-        <item name="colorPrimary">@color/dark_green</item>
-        <item name="colorPrimaryVariant">@color/dark_green</item>
+        <item name="colorPrimary">@color/clix_green</item>
+        <item name="colorPrimaryVariant">@color/clix_green</item>
         <item name="colorOnPrimary">@color/white</item>
 
         <!-- Secondary brand color -->
-        <item name="colorSecondary">@color/dark_green</item>
+        <item name="colorSecondary">@color/clix_green</item>
         <item name="colorOnSecondary">@color/white</item>
 
         <!-- Status bar color -->
-        <item name="android:statusBarColor">@color/dark_green</item>
+        <item name="android:statusBarColor">@color/clix_green</item>
         <item name="android:windowLightStatusBar">false</item>
     </style>
 

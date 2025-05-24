@@ -4,10 +4,10 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2025-05-24T10:24:41.991740Z">
+        <DropdownSelection timestamp="2025-05-24T13:43:17.377154Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=/Users/muyeed/.android/avd/Pixel_9_Pro.avd" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=/Users/muyeed/.android/avd/OnePlus_Nord_CE4_Lite_5G.avd" />
             </handle>
           </Target>
         </DropdownSelection>
