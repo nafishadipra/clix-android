@@ -1190,7 +1190,7 @@
                     android:layout_height="wrap_content"
                     android:text="Home"
                     android:textColor="#4A90E2"
-                    android:textSize="10sp"
+                    android:textSize="9sp"
                     android:textStyle="bold"
                     android:layout_marginTop="2dp" />
 

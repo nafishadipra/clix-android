@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="outage_title" type="id" />
+    <item name="map_card" type="id" />
+    <item name="map_area" type="id" />
+    <item name="map_legend" type="id" />
+    <item name="map_placeholder_text" type="id" />
+    <item name="outages_list_card" type="id" />
+    <item name="outage_item_1" type="id" />
+    <item name="outage_item_2" type="id" />
+    <item name="outage_item_3" type="id" />
+    <item name="divider_3" type="id" />
+    <item name="outage_item_4" type="id" />
+    <item name="stats_card" type="id" />
+    <item name="stats_title" type="id" />
+</resources>
