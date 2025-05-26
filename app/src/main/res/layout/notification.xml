@@ -34,7 +34,7 @@
             android:id="@+id/notifications_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Notifications"
+            android:text="Notification"
             android:textStyle="bold"
             android:textSize="23sp"
             android:textColor="#666666"

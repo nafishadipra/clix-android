@@ -105,7 +105,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/rectangle_rad25dp"
-                    android:backgroundTint="#E3F2FD"
+                    android:backgroundTint="#FFFFFF"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
