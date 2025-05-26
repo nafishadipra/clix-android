@@ -593,7 +593,7 @@
                         android:layout_width="12dp"
                         android:layout_height="12dp"
                         android:background="@drawable/rectangle_rad25dp"
-                        android:backgroundTint="#15C3A0"
+                        android:backgroundTint="#4CAF50"
                         android:layout_marginEnd="12dp" />
 
                     <!-- Utility Icon -->
