@@ -14,8 +14,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="right_chevron_svgrepo_com" />
-                            <entry key="sourceFile" value="$PROJECT_DIR$/external/right-chevron-svgrepo-com.svg" />
+                            <entry key="outputName" value="clix_mobile" />
+                            <entry key="sourceFile" value="$PROJECT_DIR$/external/CLIX-Mobile.svg" />
                           </map>
                         </option>
                       </PersistentState>
