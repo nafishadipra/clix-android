@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#EBEBEB"
     android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+    tools:context=".DashboardActivity">
 
     <!-- Status Bar Spacer -->
     <View
@@ -34,8 +34,9 @@
         android:id="@+id/hi_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hi, User!"
-        android:textSize="25dp"
+        android:text="Hi, John Doe!"
+        android:textSize="23dp"
+        android:textStyle="bold"
         android:textColor="#666666"
         app:layout_constraintBottom_toBottomOf="@+id/top_menu"
         app:layout_constraintStart_toStartOf="@+id/top_menu"
@@ -93,14 +94,14 @@
                 android:layout_height="180dp"
                 android:layout_marginBottom="24dp"
                 android:background="@drawable/rectangle_rad25dp"
-                android:backgroundTint="@color/dark_green"
+                android:backgroundTint="@color/clix_green"
                 android:outlineProvider="background">
 
                 <ImageView
                     android:id="@+id/money_logo"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:alpha="0.3"
+                    android:alpha="0.6"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/banknote_svgrepo_com"
@@ -140,7 +141,7 @@
                     android:layout_height="40dp"
                     android:orientation="horizontal"
                     android:background="@drawable/rectangle_rad25dp"
-                    android:backgroundTint="#05663F"
+                    android:backgroundTint="@color/clix_green"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginBottom="24dp"
@@ -155,7 +156,7 @@
                         android:gravity="center"
                         android:background="@drawable/rectangle_rad25dp"
                         android:backgroundTint="@color/white"
-                        android:textColor="#05663F"
+                        android:textColor="@color/clix_green"
                         android:textStyle="bold" />
 
                     <TextView
@@ -226,7 +227,7 @@
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:background="@drawable/rectangle_rad25dp"
-                    android:backgroundTint="#E8F5E8"
+                    android:backgroundTint="#E7F6EE"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -320,7 +321,7 @@
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:background="@drawable/rectangle_rad25dp"
-                    android:backgroundTint="#FFF3E0"
+                    android:backgroundTint="#FFEAEA"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -552,7 +553,7 @@
                             android:layout_width="12dp"
                             android:layout_height="12dp"
                             android:background="@drawable/rectangle_rad25dp"
-                            android:backgroundTint="#4CAF50" />
+                            android:backgroundTint="#15C3A0" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -575,7 +576,7 @@
                             android:layout_width="12dp"
                             android:layout_height="12dp"
                             android:background="@drawable/rectangle_rad25dp"
-                            android:backgroundTint="#FF9800" />
+                            android:backgroundTint="#FF6B6A" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -597,7 +598,7 @@
                             android:layout_width="12dp"
                             android:layout_height="12dp"
                             android:background="@drawable/rectangle_rad25dp"
-                            android:backgroundTint="#2196F3" />
+                            android:backgroundTint="#70A7F0" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -643,20 +644,20 @@
                                 android:layout_width="8dp"
                                 android:layout_height="60dp"
                                 android:background="@drawable/rectangle_rad25dp"
-                                android:backgroundTint="#4CAF50" />
+                                android:backgroundTint="#15C3A0" />
 
                             <View
                                 android:layout_width="8dp"
                                 android:layout_height="45dp"
                                 android:background="@drawable/rectangle_rad25dp"
-                                android:backgroundTint="#FF9800"
+                                android:backgroundTint="#FF6B6A"
                                 android:layout_marginTop="2dp" />
 
                             <View
                                 android:layout_width="8dp"
                                 android:layout_height="30dp"
                                 android:background="@drawable/rectangle_rad25dp"
-                                android:backgroundTint="#2196F3"
+                                android:backgroundTint="#70A7F0"
                                 android:layout_marginTop="2dp" />
 
                         </LinearLayout>
@@ -673,20 +674,20 @@
                                 android:layout_width="8dp"
                                 android:layout_height="75dp"
                                 android:background="@drawable/rectangle_rad25dp"
-                                android:backgroundTint="#4CAF50" />
+                                android:backgroundTint="#15C3A0" />
 
                             <View
                                 android:layout_width="8dp"
                                 android:layout_height="40dp"
                                 android:background="@drawable/rectangle_rad25dp"
-                                android:backgroundTint="#FF9800"
+                                android:backgroundTint="#FF6B6A"
                                 android:layout_marginTop="2dp" />
 
                             <View
                                 android:layout_width="8dp"
                                 android:layout_height="35dp"
                                 android:background="@drawable/rectangle_rad25dp"
-                                android:backgroundTint="#2196F3"
+                                android:backgroundTint="#70A7F0"
                                 android:layout_marginTop="2dp" />
 
                         </LinearLayout>
@@ -703,20 +704,20 @@
                                 android:layout_width="8dp"
                                 android:layout_height="55dp"
                                 android:background="@drawable/rectangle_rad25dp"
-                                android:backgroundTint="#4CAF50" />
+                                android:backgroundTint="#15C3A0" />
 
                             <View
                                 android:layout_width="8dp"
                                 android:layout_height="50dp"
                                 android:background="@drawable/rectangle_rad25dp"
-                                android:backgroundTint="#FF9800"
+                                android:backgroundTint="#FF6B6A"
                                 android:layout_marginTop="2dp" />
 
                             <View
                                 android:layout_width="8dp"
                                 android:layout_height="25dp"
                                 android:background="@drawable/rectangle_rad25dp"
-                                android:backgroundTint="#2196F3"
+                                android:backgroundTint="#70A7F0"
                                 android:layout_marginTop="2dp" />
 
                         </LinearLayout>
@@ -733,20 +734,20 @@
                                 android:layout_width="8dp"
                                 android:layout_height="80dp"
                                 android:background="@drawable/rectangle_rad25dp"
-                                android:backgroundTint="#4CAF50" />
+                                android:backgroundTint="#15C3A0" />
 
                             <View
                                 android:layout_width="8dp"
                                 android:layout_height="35dp"
                                 android:background="@drawable/rectangle_rad25dp"
-                                android:backgroundTint="#FF9800"
+                                android:backgroundTint="#FF6B6A"
                                 android:layout_marginTop="2dp" />
 
                             <View
                                 android:layout_width="8dp"
                                 android:layout_height="40dp"
                                 android:background="@drawable/rectangle_rad25dp"
-                                android:backgroundTint="#2196F3"
+                                android:backgroundTint="#70A7F0"
                                 android:layout_marginTop="2dp" />
 
                         </LinearLayout>
@@ -763,20 +764,20 @@
                                 android:layout_width="8dp"
                                 android:layout_height="45dp"
                                 android:background="@drawable/rectangle_rad25dp"
-                                android:backgroundTint="#4CAF50" />
+                                android:backgroundTint="#15C3A0" />
 
                             <View
                                 android:layout_width="8dp"
                                 android:layout_height="55dp"
                                 android:background="@drawable/rectangle_rad25dp"
-                                android:backgroundTint="#FF9800"
+                                android:backgroundTint="#FF6B6A"
                                 android:layout_marginTop="2dp" />
 
                             <View
                                 android:layout_width="8dp"
                                 android:layout_height="20dp"
                                 android:background="@drawable/rectangle_rad25dp"
-                                android:backgroundTint="#2196F3"
+                                android:backgroundTint="#70A7F0"
                                 android:layout_marginTop="2dp" />
 
                         </LinearLayout>
@@ -793,20 +794,20 @@
                                 android:layout_width="8dp"
                                 android:layout_height="65dp"
                                 android:background="@drawable/rectangle_rad25dp"
-                                android:backgroundTint="#4CAF50" />
+                                android:backgroundTint="#15C3A0" />
 
                             <View
                                 android:layout_width="8dp"
                                 android:layout_height="30dp"
                                 android:background="@drawable/rectangle_rad25dp"
-                                android:backgroundTint="#FF9800"
+                                android:backgroundTint="#FF6B6A"
                                 android:layout_marginTop="2dp" />
 
                             <View
                                 android:layout_width="8dp"
                                 android:layout_height="45dp"
                                 android:background="@drawable/rectangle_rad25dp"
-                                android:backgroundTint="#2196F3"
+                                android:backgroundTint="#70A7F0"
                                 android:layout_marginTop="2dp" />
 
                         </LinearLayout>
@@ -823,20 +824,20 @@
                                 android:layout_width="8dp"
                                 android:layout_height="70dp"
                                 android:background="@drawable/rectangle_rad25dp"
-                                android:backgroundTint="#4CAF50" />
+                                android:backgroundTint="#15C3A0" />
 
                             <View
                                 android:layout_width="8dp"
                                 android:layout_height="42dp"
                                 android:background="@drawable/rectangle_rad25dp"
-                                android:backgroundTint="#FF9800"
+                                android:backgroundTint="#FF6B6A"
                                 android:layout_marginTop="2dp" />
 
                             <View
                                 android:layout_width="8dp"
                                 android:layout_height="38dp"
                                 android:background="@drawable/rectangle_rad25dp"
-                                android:backgroundTint="#2196F3"
+                                android:backgroundTint="#70A7F0"
                                 android:layout_marginTop="2dp" />
 
                         </LinearLayout>
@@ -1115,9 +1116,9 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <!-- Pay Button -->
+            <!-- Bill Button -->
             <LinearLayout
-                android:id="@+id/nav_pay"
+                android:id="@+id/nav_recharge"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -1126,7 +1127,7 @@
                 android:padding="8dp">
 
                 <ImageView
-                    android:id="@+id/pay_button"
+                    android:id="@+id/recharge_button"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     app:srcCompat="@drawable/bill_list_svgrepo_com" />
@@ -1134,9 +1135,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Pay"
+                    android:text="Bill"
                     android:textColor="#8A8A8A"
-                    android:textSize="10sp"
+                    android:textSize="7.5sp"
                     android:layout_marginTop="2dp" />
 
             </LinearLayout>
@@ -1162,7 +1163,7 @@
                     android:layout_height="wrap_content"
                     android:text="Meter"
                     android:textColor="#8A8A8A"
-                    android:textSize="10sp"
+                    android:textSize="7.5sp"
                     android:layout_marginTop="2dp" />
 
             </LinearLayout>
@@ -1190,7 +1191,7 @@
                     android:layout_height="wrap_content"
                     android:text="Home"
                     android:textColor="#4A90E2"
-                    android:textSize="9sp"
+                    android:textSize="8sp"
                     android:textStyle="bold"
                     android:layout_marginTop="2dp" />
 
@@ -1215,9 +1216,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Map"
+                    android:text="Outage"
                     android:textColor="#8A8A8A"
-                    android:textSize="10sp"
+                    android:textSize="7.5sp"
                     android:layout_marginTop="2dp" />
 
             </LinearLayout>
@@ -1243,7 +1244,7 @@
                     android:layout_height="wrap_content"
                     android:text="Settings"
                     android:textColor="#8A8A8A"
-                    android:textSize="10sp"
+                    android:textSize="7.5sp"
                     android:layout_marginTop="2dp" />
 
             </LinearLayout>

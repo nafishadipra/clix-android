@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#EBEBEB"
     android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+    tools:context=".OutageActivity">
 
     <!-- Status Bar Spacer -->
     <View
@@ -34,8 +34,9 @@
         android:id="@+id/outage_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Outage Map"
-        android:textSize="25dp"
+        android:text="Outage"
+        android:textSize="23dp"
+        android:textStyle="bold"
         android:textColor="#666666"
         app:layout_constraintBottom_toBottomOf="@+id/top_menu"
         app:layout_constraintStart_toStartOf="@+id/top_menu"
@@ -141,7 +142,7 @@
                             android:layout_width="16dp"
                             android:layout_height="16dp"
                             android:background="@drawable/rectangle_rad25dp"
-                            android:backgroundTint="#4CAF50" />
+                            android:backgroundTint="#15C3A0" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -165,7 +166,7 @@
                             android:layout_width="16dp"
                             android:layout_height="16dp"
                             android:background="@drawable/rectangle_rad25dp"
-                            android:backgroundTint="#FF9800" />
+                            android:backgroundTint="#FF6B6A" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -188,7 +189,7 @@
                             android:layout_width="16dp"
                             android:layout_height="16dp"
                             android:background="@drawable/rectangle_rad25dp"
-                            android:backgroundTint="#2196F3" />
+                            android:backgroundTint="#70A7F0" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -267,7 +268,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:background="@drawable/rectangle_rad25dp"
-                        android:backgroundTint="#E8F5E8" />
+                        android:backgroundTint="#E7F6EE" />
 
                     <ImageView
                         android:layout_width="20dp"
@@ -327,6 +328,20 @@
                             android:textColor="#8A8A8A"
                             android:textSize="12sp"
                             android:layout_marginTop="2dp" />
+
+                        <!-- Outage Range -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Range: 3.2 km radius"
+                            android:textColor="#FF6B6B"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/rectangle_rad25dp"
+                            android:backgroundTint="#FFEBEE"
+                            android:paddingHorizontal="6dp"
+                            android:paddingVertical="2dp" />
 
                     </LinearLayout>
 
@@ -425,6 +440,20 @@
                             android:textSize="12sp"
                             android:layout_marginTop="2dp" />
 
+                        <!-- Outage Range -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Range: 2.8 km radius"
+                            android:textColor="#FF6B6B"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/rectangle_rad25dp"
+                            android:backgroundTint="#FFEBEE"
+                            android:paddingHorizontal="6dp"
+                            android:paddingVertical="2dp" />
+
                     </LinearLayout>
 
                 </LinearLayout>
@@ -461,7 +490,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:background="@drawable/rectangle_rad25dp"
-                        android:backgroundTint="#FFF3E0" />
+                        android:backgroundTint="#FFEAEA" />
 
                     <ImageView
                         android:layout_width="20dp"
@@ -522,6 +551,20 @@
                             android:textSize="12sp"
                             android:layout_marginTop="2dp" />
 
+                        <!-- Outage Range -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Range: 1.5 km radius"
+                            android:textColor="#FF8F00"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/rectangle_rad25dp"
+                            android:backgroundTint="#FFF8E1"
+                            android:paddingHorizontal="6dp"
+                            android:paddingVertical="2dp" />
+
                     </LinearLayout>
 
                 </LinearLayout>
@@ -550,7 +593,7 @@
                         android:layout_width="12dp"
                         android:layout_height="12dp"
                         android:background="@drawable/rectangle_rad25dp"
-                        android:backgroundTint="#4CAF50"
+                        android:backgroundTint="#15C3A0"
                         android:layout_marginEnd="12dp" />
 
                     <!-- Utility Icon -->
@@ -558,7 +601,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:background="@drawable/rectangle_rad25dp"
-                        android:backgroundTint="#E8F5E8" />
+                        android:backgroundTint="#E7F6EE" />
 
                     <ImageView
                         android:layout_width="20dp"
@@ -618,6 +661,20 @@
                             android:textColor="#8A8A8A"
                             android:textSize="12sp"
                             android:layout_marginTop="2dp" />
+
+                        <!-- Outage Range -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Range: 4.1 km radius"
+                            android:textColor="#4CAF50"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/rectangle_rad25dp"
+                            android:backgroundTint="#E8F5E8"
+                            android:paddingHorizontal="6dp"
+                            android:paddingVertical="2dp" />
 
                     </LinearLayout>
 
@@ -723,7 +780,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Resolved"
-                            android:textColor="#8A8A8A"
+                            android:textColor="#4CAF50"
                             android:textSize="12sp"
                             android:layout_marginTop="4dp" />
 
@@ -761,9 +818,9 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <!-- Pay Button -->
+            <!-- Bill Button -->
             <LinearLayout
-                android:id="@+id/nav_pay"
+                android:id="@+id/nav_recharge"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -772,7 +829,7 @@
                 android:padding="8dp">
 
                 <ImageView
-                    android:id="@+id/pay_button"
+                    android:id="@+id/recharge_button"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     app:srcCompat="@drawable/bill_list_svgrepo_com" />
@@ -780,9 +837,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Pay"
+                    android:text="Bill"
                     android:textColor="#8A8A8A"
-                    android:textSize="10sp"
+                    android:textSize="7.5sp"
                     android:layout_marginTop="2dp" />
 
             </LinearLayout>
@@ -808,7 +865,7 @@
                     android:layout_height="wrap_content"
                     android:text="Meter"
                     android:textColor="#8A8A8A"
-                    android:textSize="10sp"
+                    android:textSize="7.5sp"
                     android:layout_marginTop="2dp" />
 
             </LinearLayout>
@@ -834,7 +891,7 @@
                     android:layout_height="wrap_content"
                     android:text="Home"
                     android:textColor="#8A8A8A"
-                    android:textSize="10sp"
+                    android:textSize="7.5sp"
                     android:layout_marginTop="2dp" />
 
             </LinearLayout>
@@ -860,9 +917,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Map"
+                    android:text="Outage"
                     android:textColor="#4A90E2"
-                    android:textSize="9sp"
+                    android:textSize="7.5sp"
                     android:textStyle="bold"
                     android:layout_marginTop="2dp" />
 
@@ -889,7 +946,7 @@
                     android:layout_height="wrap_content"
                     android:text="Settings"
                     android:textColor="#8A8A8A"
-                    android:textSize="10sp"
+                    android:textSize="7.5sp"
                     android:layout_marginTop="2dp" />
 
             </LinearLayout>

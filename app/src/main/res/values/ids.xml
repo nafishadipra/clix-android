@@ -1,5 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Common Navigation IDs -->
+    <item name="nav_pay" type="id" />
+    <item name="nav_recharge" type="id" />
+    <item name="nav_meter" type="id" />
+    <item name="nav_home" type="id" />
+    <item name="nav_map" type="id" />
+    <item name="nav_settings" type="id" />
+    <item name="pay_button" type="id" />
+    <item name="recharge_button" type="id" />
+    <item name="meter_button" type="id" />
+    <item name="home_button" type="id" />
+    <item name="map_button" type="id" />
+    <item name="setting_button" type="id" />
+
+    <!-- Common Top Menu IDs -->
+    <item name="notification_icon" type="id" />
+    <item name="user_picture" type="id" />
+    <item name="top_menu" type="id" />
+    <item name="bottom_menu" type="id" />
+    <item name="background_scroll" type="id" />
+    <item name="status_bar_spacer" type="id" />
+
+    <!-- Dashboard Specific IDs -->
+    <item name="hi_text" type="id" />
+    <item name="money_glance" type="id" />
+    <item name="money_logo" type="id" />
+    <item name="total_spent_text" type="id" />
+    <item name="money_text" type="id" />
+    <item name="period_selector" type="id" />
+    <item name="btn_day" type="id" />
+    <item name="btn_month" type="id" />
+    <item name="btn_year" type="id" />
+    <item name="electricity_glance" type="id" />
+    <item name="electricity_icon_bg" type="id" />
+    <item name="electricity_logo" type="id" />
+    <item name="electricity_title" type="id" />
+    <item name="electricity_usage_info" type="id" />
+    <item name="electricity_usage" type="id" />
+    <item name="electricity_change" type="id" />
+    <item name="gas_glance" type="id" />
+    <item name="gas_icon_bg" type="id" />
+    <item name="gas_logo" type="id" />
+    <item name="gas_title" type="id" />
+    <item name="gas_usage_info" type="id" />
+    <item name="gas_usage" type="id" />
+    <item name="gas_change" type="id" />
+    <item name="water_glance" type="id" />
+    <item name="water_icon_bg" type="id" />
+    <item name="water_logo" type="id" />
+    <item name="water_title" type="id" />
+    <item name="water_usage_info" type="id" />
+    <item name="water_usage" type="id" />
+    <item name="water_change" type="id" />
+    <item name="usage_chart_card" type="id" />
+    <item name="chart_legend" type="id" />
+    <item name="chart_area" type="id" />
+    <item name="chart_info" type="id" />
+    <item name="activity_section" type="id" />
+    <item name="activity_item_1" type="id" />
+    <item name="activity_item_2" type="id" />
+    <item name="activity_item_3" type="id" />
+    <item name="divider_1" type="id" />
+    <item name="divider_2" type="id" />
+
+    <!-- Login Specific IDs -->
+    <item name="clix_logo" type="id" />
+    <item name="welcome_text" type="id" />
+    <item name="slogan_text" type="id" />
+    <item name="phone_number_input" type="id" />
+    <item name="editTextPhone" type="id" />
+    <item name="password_input" type="id" />
+    <item name="editTextPassword" type="id" />
+    <item name="forget_pass_text" type="id" />
+    <item name="btn_login" type="id" />
+    <item name="signup_text" type="id" />
+
+    <!-- Bill/Recharge Specific IDs -->
+    <item name="bills_title" type="id" />
+    <item name="recharge_title" type="id" />
+
+    <!-- Outstanding Bills -->
+    <item name="outstanding_summary_card" type="id" />
+    <item name="bill_icon" type="id" />
+    <item name="outstanding_label" type="id" />
+    <item name="outstanding_amount" type="id" />
+    <item name="quick_pay_all_btn" type="id" />
+    <item name="outstanding_bills_card" type="id" />
+    <item name="outstanding_bill_1" type="id" />
+    <item name="outstanding_bill_2" type="id" />
+    <item name="outstanding_bill_3" type="id" />
+    <item name="pay_electricity_btn" type="id" />
+    <item name="pay_gas_btn" type="id" />
+    <item name="pay_water_btn" type="id" />
+    <item name="bill_history_card" type="id" />
+    <item name="history_bill_1" type="id" />
+    <item name="history_bill_2" type="id" />
+    <item name="history_bill_3" type="id" />
+    <item name="invoice_electricity_btn" type="id" />
+    <item name="invoice_gas_btn" type="id" />
+    <item name="invoice_water_btn" type="id" />
+    <item name="bill_summary_card" type="id" />
+
+    <!-- Low Balance/Recharge -->
+    <item name="low_balance_summary_card" type="id" />
+    <item name="balance_icon" type="id" />
+    <item name="low_balance_label" type="id" />
+    <item name="total_needed_amount" type="id" />
+    <item name="quick_recharge_all_btn" type="id" />
+    <item name="low_balance_meters_card" type="id" />
+    <item name="low_balance_meter_1" type="id" />
+    <item name="low_balance_meter_2" type="id" />
+    <item name="low_balance_meter_3" type="id" />
+    <item name="recharge_electricity_btn" type="id" />
+    <item name="recharge_gas_btn" type="id" />
+    <item name="recharge_water_btn" type="id" />
+    <item name="recharge_history_card" type="id" />
+    <item name="history_recharge_1" type="id" />
+    <item name="history_recharge_2" type="id" />
+    <item name="history_recharge_3" type="id" />
+    <item name="receipt_electricity_btn" type="id" />
+    <item name="receipt_gas_btn" type="id" />
+    <item name="receipt_water_btn" type="id" />
+    <item name="balance_summary_card" type="id" />
+
+    <item name="summary_title" type="id" />
+    <item name="divider_3" type="id" />
+    <item name="divider_4" type="id" />
+
+    <!-- Meter Specific IDs -->
+    <item name="meter_title" type="id" />
+    <item name="realtime_status_card" type="id" />
+    <item name="realtime_icon" type="id" />
+    <item name="realtime_label" type="id" />
+    <item name="active_meters_count" type="id" />
+    <item name="status_indicator" type="id" />
+    <item name="electricity_meter_card" type="id" />
+    <item name="electricity_header" type="id" />
+    <item name="electricity_readings" type="id" />
+    <item name="electricity_last_updated" type="id" />
+    <item name="electricity_actions" type="id" />
+    <item name="gas_meter_card" type="id" />
+    <item name="gas_header" type="id" />
+    <item name="gas_readings" type="id" />
+    <item name="gas_last_updated" type="id" />
+    <item name="gas_actions" type="id" />
+    <item name="water_meter_card" type="id" />
+    <item name="water_header" type="id" />
+    <item name="water_readings" type="id" />
+    <item name="water_last_updated" type="id" />
+    <item name="water_actions" type="id" />
+    <item name="quick_stats_card" type="id" />
+    <item name="stats_title" type="id" />
+
+    <!-- Outage Specific IDs -->
     <item name="outage_title" type="id" />
     <item name="map_card" type="id" />
     <item name="map_area" type="id" />
@@ -9,8 +163,54 @@
     <item name="outage_item_1" type="id" />
     <item name="outage_item_2" type="id" />
     <item name="outage_item_3" type="id" />
-    <item name="divider_3" type="id" />
     <item name="outage_item_4" type="id" />
     <item name="stats_card" type="id" />
-    <item name="stats_title" type="id" />
+
+    <!-- Notification Specific IDs -->
+    <item name="notifications_title" type="id" />
+    <item name="mark_all_read" type="id" />
+    <item name="filter_tabs_card" type="id" />
+    <item name="tab_all" type="id" />
+    <item name="tab_bills" type="id" />
+    <item name="tab_outages" type="id" />
+    <item name="tab_alerts" type="id" />
+    <item name="today_notifications_card" type="id" />
+    <item name="notification_item_1" type="id" />
+    <item name="notification_item_2" type="id" />
+    <item name="notification_item_3" type="id" />
+    <item name="yesterday_notifications_card" type="id" />
+    <item name="notification_item_4" type="id" />
+    <item name="notification_item_5" type="id" />
+    <item name="earlier_summary_card" type="id" />
+
+    <!-- Settings Specific IDs -->
+    <item name="settings_title" type="id" />
+    <item name="profile_section" type="id" />
+    <item name="profile_avatar" type="id" />
+    <item name="profile_name" type="id" />
+    <item name="profile_email" type="id" />
+    <item name="edit_profile_btn" type="id" />
+    <item name="account_settings_card" type="id" />
+    <item name="personal_info_item" type="id" />
+    <item name="security_item" type="id" />
+    <item name="payment_methods_item" type="id" />
+    <item name="notifications_settings_card" type="id" />
+    <item name="push_notifications_item" type="id" />
+    <item name="push_notifications_switch" type="id" />
+    <item name="email_notifications_item" type="id" />
+    <item name="email_notifications_switch" type="id" />
+    <item name="sms_notifications_item" type="id" />
+    <item name="sms_notifications_switch" type="id" />
+    <item name="app_preferences_card" type="id" />
+    <item name="dark_mode_item" type="id" />
+    <item name="dark_mode_switch" type="id" />
+    <item name="language_item" type="id" />
+    <item name="help_support_item" type="id" />
+    <item name="logout_card" type="id" />
+    <item name="logout_item" type="id" />
+    <item name="divider_5" type="id" />
+    <item name="divider_6" type="id" />
+
+    <!-- Common Main Container ID -->
+    <item name="main" type="id" />
 </resources>
