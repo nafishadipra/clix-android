@@ -1,4 +1,4 @@
-package com.clix.app
+package com.meshmind.clix
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,13 +8,12 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.widget.LinearLayout
 import android.widget.ImageView
-import android.widget.TextView
 
-class DashboardActivity : AppCompatActivity() {
+class OutageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.dashboard)
+        setContentView(R.layout.outage)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -22,7 +21,6 @@ class DashboardActivity : AppCompatActivity() {
         }
 
         setupTopMenuNavigation()
-        setupPeriodSelector()
         setupBottomNavigation()
     }
 
@@ -42,30 +40,13 @@ class DashboardActivity : AppCompatActivity() {
         }
     }
 
-    private fun setupPeriodSelector() {
-        val btnDay = findViewById<TextView>(R.id.btn_day)
-        val btnMonth = findViewById<TextView>(R.id.btn_month)
-        val btnYear = findViewById<TextView>(R.id.btn_year)
-
-        btnDay.setOnClickListener {
-            // Handle day selection
-        }
-
-        btnMonth.setOnClickListener {
-            // Handle month selection
-        }
-
-        btnYear.setOnClickListener {
-            // Handle year selection
-        }
-    }
-
     private fun setupBottomNavigation() {
         val rechargeButton = findViewById<LinearLayout>(R.id.nav_recharge)
         rechargeButton.setOnClickListener {
             val intent = Intent(this, BillActivity::class.java)
             startActivity(intent)
             overridePendingTransition(0, 0)
+            finish()
         }
 
         val meterButton = findViewById<LinearLayout>(R.id.nav_meter)
@@ -73,18 +54,20 @@ class DashboardActivity : AppCompatActivity() {
             val intent = Intent(this, MeterActivity::class.java)
             startActivity(intent)
             overridePendingTransition(0, 0)
+            finish()
         }
 
         val homeButton = findViewById<LinearLayout>(R.id.nav_home)
         homeButton.setOnClickListener {
-            // Already on home
+            val intent = Intent(this, DashboardActivity::class.java)
+            startActivity(intent)
+            overridePendingTransition(0, 0)
+            finish()
         }
 
         val mapButton = findViewById<LinearLayout>(R.id.nav_map)
         mapButton.setOnClickListener {
-            val intent = Intent(this, OutageActivity::class.java)
-            startActivity(intent)
-            overridePendingTransition(0, 0)
+            // Already on outage screen
         }
 
         val settingsButton = findViewById<LinearLayout>(R.id.nav_settings)
@@ -92,6 +75,7 @@ class DashboardActivity : AppCompatActivity() {
             val intent = Intent(this, SettingsActivity::class.java)
             startActivity(intent)
             overridePendingTransition(0, 0)
+            finish()
         }
     }
 }

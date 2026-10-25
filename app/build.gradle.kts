@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.clix.app"
+    namespace = "com.meshmind.clix"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.clix.app"
+        applicationId = "com.meshmind.clix"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

@@ -1,4 +1,4 @@
-package com.clix.app
+package com.meshmind.clix
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,12 +8,13 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.widget.LinearLayout
 import android.widget.ImageView
+import android.widget.TextView
 
-class OutageActivity : AppCompatActivity() {
+class MeterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.outage)
+        setContentView(R.layout.meter)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -21,6 +22,7 @@ class OutageActivity : AppCompatActivity() {
         }
 
         setupTopMenuNavigation()
+        setupMeterActions()
         setupBottomNavigation()
     }
 
@@ -40,6 +42,25 @@ class OutageActivity : AppCompatActivity() {
         }
     }
 
+    private fun setupMeterActions() {
+        val electricityActions = findViewById<LinearLayout>(R.id.electricity_actions)
+        val gasActions = findViewById<LinearLayout>(R.id.gas_actions)
+        val waterActions = findViewById<LinearLayout>(R.id.water_actions)
+
+        // Setup click listeners for meter action buttons
+        electricityActions.setOnClickListener {
+            // Handle electricity meter actions
+        }
+
+        gasActions.setOnClickListener {
+            // Handle gas meter actions
+        }
+
+        waterActions.setOnClickListener {
+            // Handle water meter actions
+        }
+    }
+
     private fun setupBottomNavigation() {
         val rechargeButton = findViewById<LinearLayout>(R.id.nav_recharge)
         rechargeButton.setOnClickListener {
@@ -51,10 +72,7 @@ class OutageActivity : AppCompatActivity() {
 
         val meterButton = findViewById<LinearLayout>(R.id.nav_meter)
         meterButton.setOnClickListener {
-            val intent = Intent(this, MeterActivity::class.java)
-            startActivity(intent)
-            overridePendingTransition(0, 0)
-            finish()
+            // Already on meter screen
         }
 
         val homeButton = findViewById<LinearLayout>(R.id.nav_home)
@@ -67,7 +85,10 @@ class OutageActivity : AppCompatActivity() {
 
         val mapButton = findViewById<LinearLayout>(R.id.nav_map)
         mapButton.setOnClickListener {
-            // Already on outage screen
+            val intent = Intent(this, OutageActivity::class.java)
+            startActivity(intent)
+            overridePendingTransition(0, 0)
+            finish()
         }
 
         val settingsButton = findViewById<LinearLayout>(R.id.nav_settings)

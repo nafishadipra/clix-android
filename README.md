@@ -1,1 +1,1 @@
-# clix-android-project
+# CLIX

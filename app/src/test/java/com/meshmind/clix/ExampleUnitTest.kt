@@ -1,4 +1,4 @@
-package com.clix.app
+package com.meshmind.clix
 
 import org.junit.Test
 

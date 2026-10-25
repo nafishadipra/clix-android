@@ -1,4 +1,4 @@
-package com.clix.app
+package com.meshmind.clix
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,14 +7,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.widget.LinearLayout
-import android.widget.TextView
 import android.widget.ImageView
+import android.widget.TextView
 
-class NotificationActivity : AppCompatActivity() {
+class BillActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.notification)
+        setContentView(R.layout.bill)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -22,12 +22,18 @@ class NotificationActivity : AppCompatActivity() {
         }
 
         setupTopMenuNavigation()
-        setupFilterTabs()
-        setupMarkAllRead()
+        setupRechargeButtons()
         setupBottomNavigation()
     }
 
     private fun setupTopMenuNavigation() {
+        val notificationIcon = findViewById<ImageView>(R.id.notification_icon)
+        notificationIcon.setOnClickListener {
+            val intent = Intent(this, NotificationActivity::class.java)
+            startActivity(intent)
+            overridePendingTransition(0, 0)
+        }
+
         val userPicture = findViewById<ImageView>(R.id.user_picture)
         userPicture.setOnClickListener {
             val intent = Intent(this, SettingsActivity::class.java)
@@ -36,57 +42,47 @@ class NotificationActivity : AppCompatActivity() {
         }
     }
 
-    private fun setupFilterTabs() {
-        val tabAll = findViewById<TextView>(R.id.tab_all)
-        val tabBills = findViewById<TextView>(R.id.tab_bills)
-        val tabOutages = findViewById<TextView>(R.id.tab_outages)
-        val tabAlerts = findViewById<TextView>(R.id.tab_alerts)
-
-        setActiveTab(tabAll, listOf(tabBills, tabOutages, tabAlerts))
-
-        tabAll.setOnClickListener {
-            setActiveTab(tabAll, listOf(tabBills, tabOutages, tabAlerts))
+    private fun setupRechargeButtons() {
+        val quickRechargeAllBtn = findViewById<TextView>(R.id.quick_recharge_all_btn)
+        quickRechargeAllBtn.setOnClickListener {
+            // Handle recharge all functionality
         }
 
-        tabBills.setOnClickListener {
-            setActiveTab(tabBills, listOf(tabAll, tabOutages, tabAlerts))
+        val rechargeElectricityBtn = findViewById<TextView>(R.id.recharge_electricity_btn)
+        rechargeElectricityBtn.setOnClickListener {
+            // Handle electricity recharge
         }
 
-        tabOutages.setOnClickListener {
-            setActiveTab(tabOutages, listOf(tabAll, tabBills, tabAlerts))
+        val rechargeGasBtn = findViewById<TextView>(R.id.recharge_gas_btn)
+        rechargeGasBtn.setOnClickListener {
+            // Handle gas recharge
         }
 
-        tabAlerts.setOnClickListener {
-            setActiveTab(tabAlerts, listOf(tabAll, tabBills, tabOutages))
+        val rechargeWaterBtn = findViewById<TextView>(R.id.recharge_water_btn)
+        rechargeWaterBtn.setOnClickListener {
+            // Handle water recharge
         }
-    }
 
-    private fun setActiveTab(activeTab: TextView, inactiveTabs: List<TextView>) {
-        activeTab.setBackgroundResource(R.drawable.rectangle_rad25dp)
-        activeTab.setBackgroundColor(getColor(R.color.clix_green))
-        activeTab.setTextColor(getColor(R.color.white))
-
-        inactiveTabs.forEach { tab ->
-            tab.setBackgroundResource(R.drawable.rectangle_rad25dp)
-            tab.setBackgroundColor(getColor(android.R.color.background_light))
-            tab.setTextColor(getColor(android.R.color.darker_gray))
+        val receiptElectricityBtn = findViewById<TextView>(R.id.receipt_electricity_btn)
+        receiptElectricityBtn.setOnClickListener {
+            // Handle receipt view
         }
-    }
 
-    private fun setupMarkAllRead() {
-        val markAllReadButton = findViewById<TextView>(R.id.mark_all_read)
-        markAllReadButton.setOnClickListener {
-            // Handle mark all as read
+        val receiptGasBtn = findViewById<TextView>(R.id.receipt_gas_btn)
+        receiptGasBtn.setOnClickListener {
+            // Handle receipt view
+        }
+
+        val receiptWaterBtn = findViewById<TextView>(R.id.receipt_water_btn)
+        receiptWaterBtn.setOnClickListener {
+            // Handle receipt view
         }
     }
 
     private fun setupBottomNavigation() {
         val rechargeButton = findViewById<LinearLayout>(R.id.nav_recharge)
         rechargeButton.setOnClickListener {
-            val intent = Intent(this, BillActivity::class.java)
-            startActivity(intent)
-            overridePendingTransition(0, 0)
-            finish()
+            // Already on recharge screen
         }
 
         val meterButton = findViewById<LinearLayout>(R.id.nav_meter)

@@ -10,14 +10,14 @@
         android:label="CLIX"
         android:roundIcon="@drawable/clix_mobile"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Clixandroidproject"
+        android:theme="@style/Theme.CLIX"
         tools:targetApi="31">
 
         <!-- Main Activity (Login) -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.Clixandroidproject">
+            android:theme="@style/Theme.CLIX">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -28,37 +28,37 @@
         <activity
             android:name=".DashboardActivity"
             android:exported="false"
-            android:theme="@style/Theme.Clixandroidproject" />
+            android:theme="@style/Theme.CLIX" />
 
         <!-- Bill Activity -->
         <activity
             android:name=".BillActivity"
             android:exported="false"
-            android:theme="@style/Theme.Clixandroidproject" />
+            android:theme="@style/Theme.CLIX" />
 
         <!-- Meter Activity -->
         <activity
             android:name=".MeterActivity"
             android:exported="false"
-            android:theme="@style/Theme.Clixandroidproject" />
+            android:theme="@style/Theme.CLIX" />
 
         <!-- Outage Activity -->
         <activity
             android:name=".OutageActivity"
             android:exported="false"
-            android:theme="@style/Theme.Clixandroidproject" />
+            android:theme="@style/Theme.CLIX" />
 
         <!-- Notification Activity -->
         <activity
             android:name=".NotificationActivity"
             android:exported="false"
-            android:theme="@style/Theme.Clixandroidproject" />
+            android:theme="@style/Theme.CLIX" />
 
         <!-- Settings Activity -->
         <activity
             android:name=".SettingsActivity"
             android:exported="false"
-            android:theme="@style/Theme.Clixandroidproject" />
+            android:theme="@style/Theme.CLIX" />
 
     </application>
 

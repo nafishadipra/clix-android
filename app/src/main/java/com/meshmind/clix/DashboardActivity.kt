@@ -1,4 +1,4 @@
-package com.clix.app
+package com.meshmind.clix
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,11 +10,11 @@ import android.widget.LinearLayout
 import android.widget.ImageView
 import android.widget.TextView
 
-class MeterActivity : AppCompatActivity() {
+class DashboardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.meter)
+        setContentView(R.layout.dashboard)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -22,7 +22,7 @@ class MeterActivity : AppCompatActivity() {
         }
 
         setupTopMenuNavigation()
-        setupMeterActions()
+        setupPeriodSelector()
         setupBottomNavigation()
     }
 
@@ -42,22 +42,21 @@ class MeterActivity : AppCompatActivity() {
         }
     }
 
-    private fun setupMeterActions() {
-        val electricityActions = findViewById<LinearLayout>(R.id.electricity_actions)
-        val gasActions = findViewById<LinearLayout>(R.id.gas_actions)
-        val waterActions = findViewById<LinearLayout>(R.id.water_actions)
+    private fun setupPeriodSelector() {
+        val btnDay = findViewById<TextView>(R.id.btn_day)
+        val btnMonth = findViewById<TextView>(R.id.btn_month)
+        val btnYear = findViewById<TextView>(R.id.btn_year)
 
-        // Setup click listeners for meter action buttons
-        electricityActions.setOnClickListener {
-            // Handle electricity meter actions
+        btnDay.setOnClickListener {
+            // Handle day selection
         }
 
-        gasActions.setOnClickListener {
-            // Handle gas meter actions
+        btnMonth.setOnClickListener {
+            // Handle month selection
         }
 
-        waterActions.setOnClickListener {
-            // Handle water meter actions
+        btnYear.setOnClickListener {
+            // Handle year selection
         }
     }
 
@@ -67,20 +66,18 @@ class MeterActivity : AppCompatActivity() {
             val intent = Intent(this, BillActivity::class.java)
             startActivity(intent)
             overridePendingTransition(0, 0)
-            finish()
         }
 
         val meterButton = findViewById<LinearLayout>(R.id.nav_meter)
         meterButton.setOnClickListener {
-            // Already on meter screen
+            val intent = Intent(this, MeterActivity::class.java)
+            startActivity(intent)
+            overridePendingTransition(0, 0)
         }
 
         val homeButton = findViewById<LinearLayout>(R.id.nav_home)
         homeButton.setOnClickListener {
-            val intent = Intent(this, DashboardActivity::class.java)
-            startActivity(intent)
-            overridePendingTransition(0, 0)
-            finish()
+            // Already on home
         }
 
         val mapButton = findViewById<LinearLayout>(R.id.nav_map)
@@ -88,7 +85,6 @@ class MeterActivity : AppCompatActivity() {
             val intent = Intent(this, OutageActivity::class.java)
             startActivity(intent)
             overridePendingTransition(0, 0)
-            finish()
         }
 
         val settingsButton = findViewById<LinearLayout>(R.id.nav_settings)
@@ -96,7 +92,6 @@ class MeterActivity : AppCompatActivity() {
             val intent = Intent(this, SettingsActivity::class.java)
             startActivity(intent)
             overridePendingTransition(0, 0)
-            finish()
         }
     }
 }

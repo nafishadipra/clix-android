@@ -1,4 +1,4 @@
-package com.clix.app
+package com.meshmind.clix
 
 import android.content.Intent
 import android.os.Bundle
